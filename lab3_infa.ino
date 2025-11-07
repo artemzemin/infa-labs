@@ -4,13 +4,13 @@ program lab3;
         n:integer;
         
     begin
-        writeln('Введите:');
-        n=2;
         x:=1;
-        while x <=3 do 
-    begin
-    y:=sin(n*x)-cos(n/x);
-    writeln('x='x:4:2, 'y='y:4:2);
-    end;
-        x:=x+0,1;
+        repeat
+        if x <=3 then
+        n:=2;
+            y:=sin(n*x)-cos(n/x);
+            writeln('x=',x:4:2);
+        x:=x+0.1;
+        until x>3;
     end.
+    
