@@ -1,0 +1,16 @@
+program lab3;
+    var 
+        x,y:real;
+        n:integer;
+        
+    begin
+        x:=1;
+        n:=2;
+        repeat
+        if x <=3 then
+            y:=sin(n*x)-cos(n/x);
+            writeln('y(',x:4:2,') =', y:4:2);
+        x:=x+0.1;
+        until x>3;
+    end.
+    
